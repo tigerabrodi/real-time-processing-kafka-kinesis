@@ -1,3 +1,4 @@
+# Using default vpc, subnets and security group for simplicity
 data "aws_vpc" "default" {
   default = true
 }
