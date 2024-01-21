@@ -20,3 +20,7 @@ terraform {
 provider "aws" {
   region = "eu-central-1"
 }
+
+module "aws_msk" {
+  source = "./modules/aws_msk"
+}
