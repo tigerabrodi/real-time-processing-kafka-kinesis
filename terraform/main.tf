@@ -10,7 +10,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.16"
+      version = "5.33.0"
     }
   }
 
@@ -22,7 +22,13 @@ provider "aws" {
 }
 
 module "aws_msk" {
-  source = "./modules/aws_msk"
+  source            = "./modules/aws_msk"
+  username          = var.scram_secret_username
+  password          = var.scram_secret_password
+  scram_secret_name = var.scram_secret_name
+  account_id        = var.account_id
+  iam_user_name     = var.iam_user_name
+  ip_address        = var.ip_address
 }
 
 module "firehose_key" {
@@ -41,4 +47,3 @@ module "kinesis_firehose" {
   kafka_cluster_arn    = module.aws_msk.kafka_cluster_arn
   depends_on           = [module.aws_msk, module.cloud_watch_logs, module.firehose_key]
 }
-
