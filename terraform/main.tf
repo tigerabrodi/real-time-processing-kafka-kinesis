@@ -1,9 +1,9 @@
 terraform {
 
   cloud {
-    organization = "tiger_projects"
+    organization = "{your-organization}"
     workspaces {
-      name = "streaming-kafka-kinesis"
+      name = "{your-workspace}"
     }
   }
 
