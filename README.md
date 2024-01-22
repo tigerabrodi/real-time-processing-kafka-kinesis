@@ -1,13 +1,11 @@
-# Real Time Streaming with Kafka and Kinesis
+# Real Time Data Streaming with Kafka and Kinesis
 
-# Debugging stories
+I previously built a [Batch Processing system: S3 -> AWS Glue -> Snowflake](https://github.com/narutosstudent/aws-glue-etl-snowflake).
 
-- AWS MSK taking forever, 30 mins, not a bug, but that's expected, it needs to setup the VPC, subnets, etc.
+This time, I wanted to build a Real Time Data Streaming system using Kafka and Kinesis.
 
-- bootstrap brokers not outputting
-- timeboxed it, went overtime lol
-- couldnt figure it out
-- grabbed it from the CLI "aws kafka get-bootstrap-brokers --cluster-arn <Cluster ARN>
-- GPT, Perplexity, Google, Github Search and Github issues of terraform aws provider. Couldn't figure it out hahaaha lol
+I've always heard of Kafka and it's wide spread usage. Plus, it was a nice fit because I wanted to build a real time data streaming system.
 
-- script not working, had to set public ip address in the security group
+# Pre Study
+
+I did some [pre study](https://github.com/narutosstudent/kafka-kinesis-notes) before embarking on this project.
