@@ -113,13 +113,16 @@ resource "aws_kinesis_stream" "kinesis_stream" {
 # Creates a Kinesis Firehose delivery stream to transfer data to S3.
 resource "aws_kinesis_firehose_delivery_stream" "firehose_to_s3" {
   name        = "firehose-to-s3-stream"
-  destination = "s3"
+  destination = "extended_s3"
 
-  s3_configuration {
+  extended_s3_configuration {
     role_arn   = aws_iam_role.firehose_role.arn
     bucket_arn = aws_s3_bucket.data_lake.arn
+
+    # Additional configuration options can be added here if needed
   }
 
+  # If you are using a Kinesis data stream as the source, include this block
   kinesis_source_configuration {
     kinesis_stream_arn = aws_kinesis_stream.kinesis_stream.arn
     role_arn           = aws_iam_role.firehose_role.arn
