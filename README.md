@@ -19,6 +19,10 @@ Additionally, I felt like I learned enough from this project to be satisfied. Co
 
 I did some [pre study](https://github.com/narutosstudent/kafka-kinesis-notes) before embarking on this project.
 
+# Visualization
+
+![Screenshot 2024-01-22 at 18 23 07](https://github.com/narutosstudent/real-time-processing-kafka-kinesis/assets/49603590/85314dc3-0b68-482c-b149-7e2ef9003f48)
+
 # Sequence of Events
 
 1. **Event Generation**: Node.js backend generates event data.
