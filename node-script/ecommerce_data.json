@@ -1,0 +1,52 @@
+[
+  {
+    "transactionId": "b4a356f9-603d-4c66-88f5-b9349dc3c7da",
+    "customerId": 952,
+    "productId": 14,
+    "quantity": 5,
+    "price": 453.0,
+    "transactionTime": "1995-02-22T19:50:08.805746",
+    "shippingAddress": "54016 Aguilar Terrace\nBellton, OH 37464",
+    "paymentMethod": "Debit Card"
+  },
+  {
+    "transactionId": "27d9fa33-a0a4-4472-af2a-2a326f9e58d8",
+    "customerId": 83171,
+    "productId": 592,
+    "quantity": 5,
+    "price": 354.93,
+    "transactionTime": "2011-03-24T12:58:18.109955",
+    "shippingAddress": "580 Stacy Center\nBenderland, FL 12052",
+    "paymentMethod": "Bank Transfer"
+  },
+  {
+    "transactionId": "19ee2f32-cc47-432d-8a30-6c9ba8a5fbce",
+    "customerId": 26413,
+    "productId": 1,
+    "quantity": 1,
+    "price": 18.18,
+    "transactionTime": "2014-12-01T05:46:37.272787",
+    "shippingAddress": "83471 Christian Union Apt. 876\nWest Ricardoton, AK 74191",
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "transactionId": "f109d321-90e8-41a1-ba19-65da466c1d77",
+    "customerId": 60045,
+    "productId": 691,
+    "quantity": 5,
+    "price": 132.85,
+    "transactionTime": "1994-08-02T05:32:27.475348",
+    "shippingAddress": "711 Miller Grove\nWest Michaelville, NH 09606",
+    "paymentMethod": "Credit Card"
+  },
+  {
+    "transactionId": "906bdd23-fb9b-4e87-85d0-61767fcd1968",
+    "customerId": 37340,
+    "productId": 757,
+    "quantity": 5,
+    "price": 204.14,
+    "transactionTime": "1976-08-27T03:56:31.589371",
+    "shippingAddress": "PSC 1291, Box 8305\nAPO AP 16155",
+    "paymentMethod": "Debit Card"
+  }
+]
