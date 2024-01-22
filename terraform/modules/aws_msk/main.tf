@@ -10,6 +10,9 @@ data "aws_subnets" "default" {
   }
 }
 
+
+# Security group with my public IP address as variable
+# Needed to let local node.js script publish records to Kafka
 resource "aws_security_group" "msk_sg" {
   name        = "msk-security-group"
   description = "Security group for MSK cluster"
@@ -39,6 +42,10 @@ resource "aws_msk_configuration" "kafka_config" {
   name           = "kafka-config"
 
   # This is more readable than using inline string and placing \n as breakpoints
+  # This lets us publish records to Kafka without having to create a topic first
+  # If topic does not exist, it will be created automatically
+  # More convenient for side project
+  # Should not be used in production
   server_properties = <<EOF
 auto.create.topics.enable = true
 delete.topic.enable = true
@@ -70,6 +77,7 @@ resource "aws_msk_cluster" "kafka_cluster" {
 
   client_authentication {
     sasl {
+      # SCRAM (Salted Challenge Response Authentication Mechanism) is an authentication protocol that is used to verify the identity of a client.
       scram = true
     }
   }

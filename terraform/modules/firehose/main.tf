@@ -88,7 +88,14 @@ resource "aws_iam_policy" "firehose_policy" {
       },
       {
         Action = [
-          "kinesis:DescribeStream"
+          "kinesis:DescribeStream",
+          "kinesis:PutRecord",
+          "kinesis:PutRecords",
+          "kinesis:GetShardIterator",
+          "kinesis:GetRecords",
+          "kinesis:ListShards",
+          "kinesis:DescribeStreamSummary",
+          "kinesis:RegisterStreamConsumer"
         ],
         Effect = "Allow",
         Resource = [

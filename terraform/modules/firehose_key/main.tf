@@ -1,3 +1,4 @@
+# https://docs.aws.amazon.com/firehose/latest/dev/encryption.html
 resource "aws_kms_key" "firehose_key" {
   description = "KMS key for Firehose"
   policy = jsonencode({
