@@ -10,7 +10,7 @@ I've always heard of Kafka and it's wide spread usage. Plus, it was a nice fit b
 
 There are two main reasons why I abandoned the project:
 
-- AWS costs rising and I hit my billing alert.
+- AWS costs rising and I hit my billing alert. (MSK is expensive)
 - Deploying changes to Kafka Cluster is very slow. Small changes take about 15 minutes to deploy. Other types of changes take 30 minutes, if not more.
 
 Additionally, I felt like I learned enough from this project to be satisfied. Considering I used AWS Glue in my previous project already.
